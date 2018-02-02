@@ -43,5 +43,12 @@ namespace Teliki
             var Form = new s_phone();
             Form.Show();
         }
+
+        private void smart_fridge_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var Form = new smart_fridge();
+            Form.Show();
+            this.Hide();
+        }
     }
 }

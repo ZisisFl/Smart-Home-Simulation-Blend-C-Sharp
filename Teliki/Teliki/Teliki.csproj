@@ -54,11 +54,70 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="sf_browser.xaml.cs">
+      <DependentUpon>sf_browser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sf_calendar.xaml.cs">
+      <DependentUpon>sf_calendar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sf_internal_indications.xaml.cs">
+      <DependentUpon>sf_internal_indications.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sf_internal_view.xaml.cs">
+      <DependentUpon>sf_internal_view.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sf_online_shop.xaml.cs">
+      <DependentUpon>sf_online_shop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sf_radio.xaml.cs">
+      <DependentUpon>sf_radio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sf_recipes.xaml.cs">
+      <DependentUpon>sf_recipes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sf_weather.xaml.cs">
+      <DependentUpon>sf_weather.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="smart_fridge.xaml.cs">
+      <DependentUpon>smart_fridge.xaml</DependentUpon>
+    </Compile>
     <Page Include="bedroom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="kitchen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sf_browser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sf_calendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sf_internal_indications.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sf_internal_view.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sf_online_shop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sf_radio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sf_recipes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sf_weather.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -87,6 +146,10 @@
       <DependentUpon>living_room.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="smart_fridge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

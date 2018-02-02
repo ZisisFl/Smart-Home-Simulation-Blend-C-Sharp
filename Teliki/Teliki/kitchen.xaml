@@ -30,6 +30,7 @@
                 </Button.RenderTransform>
             </Button>
             <Image x:Name="image" HorizontalAlignment="Right" Height="161.5" Margin="0,0,169,28" VerticalAlignment="Bottom" Width="82" Source="phone_icon.png" PreviewMouseLeftButtonDown="image_PreviewMouseLeftButtonDown"/>
+            <Button x:Name="smart_fridge" Content="Open" HorizontalAlignment="Right" Margin="0,251.5,320.5,0" VerticalAlignment="Top" Width="43.5" Height="53.46" Opacity="0.4" PreviewMouseLeftButtonDown="smart_fridge_PreviewMouseLeftButtonDown"/>
         </Grid>
     </Grid>
 </Window>

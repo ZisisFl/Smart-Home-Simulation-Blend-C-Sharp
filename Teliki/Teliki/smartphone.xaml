@@ -8,5 +8,9 @@
         Title="Smartphone" Height="1280" Width="747">
     <Grid>
         <Image x:Name="smartphone" Margin="0,10,10,10" Source="smartphone.png"/>
+        <TextBlock x:Name="textBlock" Margin="105,184,112.037,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54.46" FontSize="36"><Run Text="Έξυπνο Ψυγεί"/><Run Text="ο "/><Run Text="S-SeriesF760"/></TextBlock>
+        <Button x:Name="internal_view" Content="Έλεγχος Εσωτερικού Ψυγείου" Margin="123.5,286.5,129.5,0" VerticalAlignment="Top" Height="73.96" FontSize="24"/>
+        <Button x:Name="sales" Content="Εκπτώσεις" Margin="123.5,576,129.5,599.04" FontSize="24"/>
+        <Button x:Name="products_needed" Content="Προϊόντα που τελειώνουν" Margin="123.5,432,129.5,0" FontSize="24" Height="73.96" VerticalAlignment="Top"/>
     </Grid>
 </Window>

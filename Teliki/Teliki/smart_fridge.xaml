@@ -1,0 +1,20 @@
+﻿<Window x:Class="Teliki.smart_fridge"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Teliki"
+        mc:Ignorable="d"
+        Title="smart_fridge" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="browser" Content="Button" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25.96" Width="37" Click="browser_Click"/>
+        <Button x:Name="weather" Content="Button" Margin="69.333,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25.96" Width="37" Click="weather_Click"/>
+        <Button x:Name="radio" Content="Button" Margin="127.333,10,127.667,0" VerticalAlignment="Top" Height="25.96" Click="radio_Click"/>
+        <Button x:Name="internal_indications" Content="Button" Margin="0,10,72.334,0" VerticalAlignment="Top" Height="25.96" HorizontalAlignment="Right" Width="37" Click="internal_indications_Click"/>
+        <Button x:Name="recipes" Content="Button" Margin="0,10,17,0" VerticalAlignment="Top" Height="25.96" HorizontalAlignment="Right" Width="37" Click="recipes_Click"/>
+        <Button x:Name="online_shop" Content="Button" Margin="10,49.333,0,0" VerticalAlignment="Top" Height="25.96" HorizontalAlignment="Left" Width="37" Click="online_shop_Click"/>
+        <Button x:Name="calendar" Content="Button" Margin="69.333,49.333,0,0" VerticalAlignment="Top" Height="25.96" HorizontalAlignment="Left" Width="37" Click="calendar_Click"/>
+        <Button x:Name="internal_view" Content="Button" Margin="127.333,49.333,127.667,0" VerticalAlignment="Top" Height="25.96" Click="internal_view_Click"/>
+
+    </Grid>
+</Window>
