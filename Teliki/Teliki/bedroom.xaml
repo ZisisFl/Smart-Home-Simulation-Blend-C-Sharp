@@ -1,0 +1,34 @@
+﻿<Window x:Class="Teliki.bedroom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Teliki"
+        mc:Ignorable="d"
+        Title="bedroom" Height="720" Width="1280">
+    <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
+        <Image x:Name="bedroom2" Margin="0" Source="bedroom.png"/>
+        <Button x:Name="kitchen_b" Margin="917.671,327.187,-304.496,357.042" Click="kitchen_b_Click" Foreground="Black" Opacity="0.6" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="666.825">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="89.928"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="image" Height="161.5" Width="82" Source="phone_icon.png"/>
+        </Button>
+        <Button x:Name="living_room_b" Content="Living Room" Margin="-309.329,327.187,0,357.042" Click="living_room_b_Click" Foreground="Black" Opacity="0.6" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="666.825">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.068"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Image x:Name="image_Copy" HorizontalAlignment="Right" Height="161.5" Margin="0,0,169,28" VerticalAlignment="Bottom" Width="82" Source="phone_icon.png" PreviewMouseLeftButtonDown="image_Copy_PreviewMouseLeftButtonDown"/>
+    </Grid>
+</Window>
