@@ -5,16 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teliki"
         mc:Ignorable="d"
-        Title="smart_fridge" Height="300" Width="300">
+        Title="smart_fridge" 
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" 
+        Width="1280" Height="720"
+        WindowState="Maximized">
+    <!--WindowStyle="None"-->
     <Grid>
-        <Button x:Name="browser" Content="Button" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25.96" Width="37" Click="browser_Click"/>
-        <Button x:Name="weather" Content="Button" Margin="69.333,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25.96" Width="37" Click="weather_Click"/>
-        <Button x:Name="radio" Content="Button" Margin="127.333,10,127.667,0" VerticalAlignment="Top" Height="25.96" Click="radio_Click"/>
-        <Button x:Name="internal_indications" Content="Button" Margin="0,10,72.334,0" VerticalAlignment="Top" Height="25.96" HorizontalAlignment="Right" Width="37" Click="internal_indications_Click"/>
-        <Button x:Name="recipes" Content="Button" Margin="0,10,17,0" VerticalAlignment="Top" Height="25.96" HorizontalAlignment="Right" Width="37" Click="recipes_Click"/>
-        <Button x:Name="online_shop" Content="Button" Margin="10,49.333,0,0" VerticalAlignment="Top" Height="25.96" HorizontalAlignment="Left" Width="37" Click="online_shop_Click"/>
-        <Button x:Name="calendar" Content="Button" Margin="69.333,49.333,0,0" VerticalAlignment="Top" Height="25.96" HorizontalAlignment="Left" Width="37" Click="calendar_Click"/>
-        <Button x:Name="internal_view" Content="Button" Margin="127.333,49.333,127.667,0" VerticalAlignment="Top" Height="25.96" Click="internal_view_Click"/>
+        <Image x:Name="image" Margin="0" Source="fridge_desk_icons.jpg"/>
+
+        <Button x:Name="browser" Content="Button" Margin="54,5.333,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30.627" Width="30.333" Click="browser_Click" Opacity="0.2"/>
+        <Button x:Name="weather" Content="Button" Margin="348.666,5.333,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30.627" Width="34.001" Click="weather_Click" Opacity="0.2"/>
+        <Button x:Name="radio" Content="Button" Margin="223.999,5.333,0,0" VerticalAlignment="Top" Height="29.294" Click="radio_Click" HorizontalAlignment="Left" Width="32" Opacity="0.2"/>
+        <Button x:Name="internal_indications" Content="Button" Margin="402.665,5.333,0,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Left" Width="32.667" Click="internal_indications_Click" Opacity="0.2"/>
+        <Button x:Name="recipes" Content="Button" Margin="164,5.333,0,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Left" Width="31.333" Click="recipes_Click" Opacity="0.2"/>
+        <Button x:Name="online_shop" Content="Button" Margin="106.667,5.999,0,0" HorizontalAlignment="Left" Width="32" Click="online_shop_Click" Opacity="0.2" Height="29.961" VerticalAlignment="Top"/>
+        <Button x:Name="calendar" Content="Button" Margin="285.333,5.333,0,0" VerticalAlignment="Top" Height="29.294" HorizontalAlignment="Left" Width="31.667" Click="calendar_Click" Opacity="0.2"/>
+        <Button x:Name="home_button" Content="Button" Margin="0,5.333,101.668,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Right" Width="31.667" Click="internal_indications_Click" Opacity="0.2"/>
+        <Button x:Name="back_button" Content="Button" Margin="0,4.333,47.001,0" VerticalAlignment="Top" Height="31.294" HorizontalAlignment="Right" Width="32.917" Click="internal_indications_Click" Opacity="0.2"/>
 
     </Grid>
 </Window>

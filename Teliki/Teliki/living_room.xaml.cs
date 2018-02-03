@@ -44,5 +44,11 @@ namespace Teliki
             var Form = new s_phone();
             Form.Show();
         }
+
+        private void control_panel_Click(object sender, RoutedEventArgs e)
+        {
+            var Form = new control_panel();
+            Form.Show();
+        }
     }
 }

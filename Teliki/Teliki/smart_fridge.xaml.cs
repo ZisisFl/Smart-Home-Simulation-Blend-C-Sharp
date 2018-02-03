@@ -73,11 +73,5 @@ namespace Teliki
             this.Hide();
         }
 
-        private void internal_view_Click(object sender, RoutedEventArgs e)
-        {
-            var Form = new sf_internal_view();
-            Form.Show();
-            this.Hide();
-        }
     }
 }

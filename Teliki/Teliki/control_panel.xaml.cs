@@ -15,23 +15,13 @@ using System.Windows.Shapes;
 namespace Teliki
 {
     /// <summary>
-    /// Interaction logic for kinito.xaml
+    /// Interaction logic for control_panel.xaml
     /// </summary>
-    public partial class s_phone : Window
+    public partial class control_panel : Window
     {
-        public s_phone()
+        public control_panel()
         {
             InitializeComponent();
-        }
-
-        private void internal_view_Click(object sender, RoutedEventArgs e)
-        {
-            fridge_inside.Visibility = Visibility.Visible;
-        }
-
-        private void back_phone_Click(object sender, RoutedEventArgs e)
-        {
-            fridge_inside.Visibility = Visibility.Hidden;
         }
     }
 }
