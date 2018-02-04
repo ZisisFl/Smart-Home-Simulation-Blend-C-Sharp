@@ -84,6 +84,9 @@
     <Compile Include="smart_fridge.xaml.cs">
       <DependentUpon>smart_fridge.xaml</DependentUpon>
     </Compile>
+    <Compile Include="smart_wardrobe.xaml.cs">
+      <DependentUpon>smart_wardrobe.xaml</DependentUpon>
+    </Compile>
     <Page Include="bedroom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -157,6 +160,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="smart_wardrobe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -211,6 +218,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="fridge_inside.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="discounts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="products.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

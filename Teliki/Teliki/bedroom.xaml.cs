@@ -43,5 +43,11 @@ namespace Teliki
             var Form = new s_phone();
             Form.Show();
         }
+
+        private void wardrobe_Click(object sender, RoutedEventArgs e)
+        {
+            var Form = new smart_wardrobe();
+            Form.Show();
+        }
     }
 }

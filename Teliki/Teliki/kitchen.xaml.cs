@@ -48,7 +48,6 @@ namespace Teliki
         {
             var Form = new smart_fridge();
             Form.Show();
-            this.Hide();
         }
     }
 }

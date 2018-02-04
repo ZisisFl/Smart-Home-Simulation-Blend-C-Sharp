@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teliki"
         mc:Ignorable="d"
-        Title="control_panel" Height="720" Width="1280">
-    <Grid>
-        <Image x:Name="image" Source="control.jpg"/>
+        Title="control_panel" Height="720" Width="1280"  Margin="0,0,0,10">
+    <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
+        <Image x:Name="image" Margin="0" Source="control.jpg"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="50,58.5,0,0" TextWrapping="Wrap" Text="Φώτα Σαλονιού" VerticalAlignment="Top" Height="36.96" Width="149.79" FontSize="20"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="50,100.5,0,0" TextWrapping="Wrap" Text="Φώτα Κουζίνας" VerticalAlignment="Top" Height="36.96" Width="149.79" FontSize="20"/>
         <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="50,142.5,0,0" TextWrapping="Wrap" Text="Φώτα Υπνοδωματίου" VerticalAlignment="Top" Height="36.96" Width="199.29" FontSize="20"/>
@@ -18,16 +18,16 @@
         <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="50,352.5,0,0" TextWrapping="Wrap" Width="179.79" FontSize="20" Text="Πλυντήριο Πιάτων" Height="36.96" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="50,392.5,0,0" TextWrapping="Wrap" Width="179.79" FontSize="20" Text="Φούρνος" Height="36.96" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy8" HorizontalAlignment="Left" Margin="50,434.5,0,0" TextWrapping="Wrap" Width="179.79" FontSize="20" Text="Τηλεόραση" Height="36.96" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Left" Margin="285.5,68.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox_Copy" Content="CheckBox" HorizontalAlignment="Left" Margin="285.5,110.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox_Copy1" Content="CheckBox" HorizontalAlignment="Left" Margin="285.5,152.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox_Copy2" Content="CheckBox" HorizontalAlignment="Left" Margin="285.5,194.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox_Copy3" Content="CheckBox" HorizontalAlignment="Left" Margin="285.5,236.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox_Copy4" Content="CheckBox" HorizontalAlignment="Left" Margin="285.5,278.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox_Copy5" Content="CheckBox" HorizontalAlignment="Left" Margin="285.5,320.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox_Copy6" Content="CheckBox" HorizontalAlignment="Left" Margin="285.5,362.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox_Copy7" Content="CheckBox" HorizontalAlignment="Left" Margin="285.5,404.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox_Copy8" Content="CheckBox" HorizontalAlignment="Left" Margin="285.5,446.133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="lights_l" Content="" HorizontalAlignment="Left" Margin="285.5,68.133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="lights_k" Content="" HorizontalAlignment="Left" Margin="285.5,110.133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="lights_b" Content="" HorizontalAlignment="Left" Margin="285.5,152.133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="kalorifer" Content="" HorizontalAlignment="Left" Margin="285.5,194.133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="aircondition_b" Content="" HorizontalAlignment="Left" Margin="285.5,236.133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="aircondition_l" Content="" HorizontalAlignment="Left" Margin="285.5,278.133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="sound_system" Content="" HorizontalAlignment="Left" Margin="285.5,320.133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="washer" Content="" HorizontalAlignment="Left" Margin="285.5,362.133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="oven" Content="" HorizontalAlignment="Left" Margin="285.5,404.133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="tv" Content="" HorizontalAlignment="Left" Margin="285.5,446.133,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

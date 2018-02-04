@@ -15,9 +15,20 @@
         <Image x:Name="smartphone" Margin="0,10,10,-374" Source="smartphone.png" Height="1229" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock" Margin="49.537,118.26,0,0" TextWrapping="Wrap" FontSize="22" Height="34.96" VerticalAlignment="Top" HorizontalAlignment="Left" Width="314.963"><Run Text="Έξυπνο Ψυγεί"/><Run Text="ο "/><Run Text="S-SeriesF760"/></TextBlock>
         <Button x:Name="internal_view" Content="Έλεγχος Εσωτερικού Ψυγείου" Margin="54.5,207.5,0,0" VerticalAlignment="Top" Height="46" FontSize="20" HorizontalAlignment="Left" Width="275" Click="internal_view_Click"/>
-        <Button x:Name="sales" Content="Εκπτώσεις" Margin="54.5,386,0,0" FontSize="20" Height="46" VerticalAlignment="Top" HorizontalAlignment="Left" Width="275"/>
-        <Button x:Name="products_needed" Content="Προϊόντα που τελειώνουν" Margin="54.5,297.5,0,0" FontSize="20" Height="46" VerticalAlignment="Top" HorizontalAlignment="Left" Width="275" d:LayoutOverrides="VerticalAlignment"/>
+        <Button x:Name="sales" Content="Εκπτώσεις" Margin="54.5,386,0,0" FontSize="20" Height="46" VerticalAlignment="Top" HorizontalAlignment="Left" Width="275" Click="sales_Click"/>
+        <Button x:Name="products_needed" Content="Προϊόντα που τελειώνουν" Margin="54.5,297.5,0,0" FontSize="20" Height="46" VerticalAlignment="Top" HorizontalAlignment="Left" Width="275" d:LayoutOverrides="VerticalAlignment" Click="products_needed_Click"/>
         <Image x:Name="fridge_inside" Margin="30,142,39.5,116.5" Source="fridge_inside.jpg" Visibility="Hidden"/>
         <Button x:Name="back_phone" Content="Button" Margin="88.5,0,0,81.04" HorizontalAlignment="Left" Width="36" Opacity="0.2" Click="back_phone_Click" Height="35.46" VerticalAlignment="Bottom"/>
+        <Image x:Name="discount" Margin="30,150,39.5,127" Source="discounts.jpg" Visibility="Hidden"/>
+        <Image x:Name="products" Margin="30,153.22,39.5,126.5" Source="products.jpg" Visibility="Hidden"/>
+        <Button x:Name="button" Content="Άμεση Αγορά Προϊόντων" Margin="54.5,0,61,154" VerticalAlignment="Bottom" Height="37.96" FontSize="16" Visibility="Hidden"/>
+        <CheckBox x:Name="checkBox" Content="" Margin="0,201.5,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
+        <CheckBox x:Name="checkBox_Copy" Content="" Margin="0,221.598,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
+        <CheckBox x:Name="checkBox_Copy1" Content="" Margin="0,241.696,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
+        <CheckBox x:Name="checkBox_Copy2" Content="" Margin="0,261.794,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
+        <CheckBox x:Name="checkBox_Copy3" Content="" Margin="0,282.401,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
+        <CheckBox x:Name="checkBox_Copy4" Content="" Margin="0,302.499,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
+        <CheckBox x:Name="checkBox_Copy5" Content="" Margin="0,322.597,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
+        <CheckBox x:Name="checkBox_Copy6" Content="" Margin="0,343.5,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
     </Grid>
 </Window>

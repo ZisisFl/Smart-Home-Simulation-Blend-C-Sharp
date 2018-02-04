@@ -31,7 +31,40 @@ namespace Teliki
 
         private void back_phone_Click(object sender, RoutedEventArgs e)
         {
+            //first button
             fridge_inside.Visibility = Visibility.Hidden;
+            //second button
+            products.Visibility = Visibility.Hidden;
+            button.Visibility = Visibility.Hidden;
+            checkBox.Visibility = Visibility.Hidden;
+            checkBox_Copy.Visibility = Visibility.Hidden;
+            checkBox_Copy1.Visibility = Visibility.Hidden;
+            checkBox_Copy2.Visibility = Visibility.Hidden;
+            checkBox_Copy3.Visibility = Visibility.Hidden;
+            checkBox_Copy4.Visibility = Visibility.Hidden;
+            checkBox_Copy5.Visibility = Visibility.Hidden;
+            checkBox_Copy6.Visibility = Visibility.Hidden;
+            //third buton
+            discount.Visibility = Visibility.Hidden;
+        }
+
+        private void sales_Click(object sender, RoutedEventArgs e)
+        {
+            discount.Visibility = Visibility.Visible;
+        }
+
+        private void products_needed_Click(object sender, RoutedEventArgs e)
+        {
+            products.Visibility = Visibility.Visible;
+            button.Visibility = Visibility.Visible;
+            checkBox.Visibility = Visibility.Visible;
+            checkBox_Copy.Visibility = Visibility.Visible;
+            checkBox_Copy1.Visibility = Visibility.Visible;
+            checkBox_Copy2.Visibility = Visibility.Visible;
+            checkBox_Copy3.Visibility = Visibility.Visible;
+            checkBox_Copy4.Visibility = Visibility.Visible;
+            checkBox_Copy5.Visibility = Visibility.Visible;
+            checkBox_Copy6.Visibility = Visibility.Visible;           
         }
     }
 }
