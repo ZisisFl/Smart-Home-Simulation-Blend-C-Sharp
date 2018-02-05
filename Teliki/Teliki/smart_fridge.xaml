@@ -7,22 +7,36 @@
         mc:Ignorable="d"
         Title="smart_fridge" 
         ResizeMode="NoResize"
-        WindowStartupLocation="CenterScreen" 
-        Width="1280" Height="720"
-        WindowState="Maximized">
+        WindowStartupLocation="CenterOwner" 
+        Width="1280" Height="720">
     <!--WindowStyle="None"-->
-    <Grid>
+    <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
         <Image x:Name="image" Margin="0" Source="fridge_desk_icons.jpg"/>
 
-        <Button x:Name="browser" Content="Button" Margin="54,5.333,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30.627" Width="30.333" Click="browser_Click" Opacity="0.2"/>
-        <Button x:Name="weather" Content="Button" Margin="348.666,5.333,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30.627" Width="34.001" Click="weather_Click" Opacity="0.2"/>
-        <Button x:Name="radio" Content="Button" Margin="223.999,5.333,0,0" VerticalAlignment="Top" Height="29.294" Click="radio_Click" HorizontalAlignment="Left" Width="32" Opacity="0.2"/>
-        <Button x:Name="internal_indications" Content="Button" Margin="402.665,5.333,0,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Left" Width="32.667" Click="internal_indications_Click" Opacity="0.2"/>
-        <Button x:Name="recipes" Content="Button" Margin="164,5.333,0,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Left" Width="31.333" Click="recipes_Click" Opacity="0.2"/>
-        <Button x:Name="online_shop" Content="Button" Margin="106.667,5.999,0,0" HorizontalAlignment="Left" Width="32" Click="online_shop_Click" Opacity="0.2" Height="29.961" VerticalAlignment="Top"/>
-        <Button x:Name="calendar" Content="Button" Margin="285.333,5.333,0,0" VerticalAlignment="Top" Height="29.294" HorizontalAlignment="Left" Width="31.667" Click="calendar_Click" Opacity="0.2"/>
-        <Button x:Name="home_button" Content="Button" Margin="0,5.333,101.668,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Right" Width="31.667" Click="internal_indications_Click" Opacity="0.2"/>
-        <Button x:Name="back_button" Content="Button" Margin="0,4.333,47.001,0" VerticalAlignment="Top" Height="31.294" HorizontalAlignment="Right" Width="32.917" Click="internal_indications_Click" Opacity="0.2"/>
+        <Button x:Name="browser" Content="Button" Margin="32.667,5.999,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30.627" Width="30.333" Click="browser_Click" Opacity="0.2"/>
+        <Button x:Name="weather" Content="Button" Margin="338.666,5.333,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30.627" Width="34.001" Click="weather_Click" Opacity="0.2"/>
+        <Button x:Name="radio" Content="Button" Margin="209.999,7.332,0,0" VerticalAlignment="Top" Height="29.294" Click="radio_Click" HorizontalAlignment="Left" Width="32" Opacity="0.2"/>
+        <Button x:Name="internal_indications" Content="Button" Margin="396.665,5.999,0,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Left" Width="32.667" Click="internal_indications_Click" Opacity="0.2"/>
+        <Button x:Name="recipes" Content="Button" Margin="146,6.665,0,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Left" Width="31.333" Click="recipes_Click" Opacity="0.2"/>
+        <Button x:Name="online_shop" Content="Button" Margin="90,6.665,0,0" HorizontalAlignment="Left" Width="32" Click="online_shop_Click" Opacity="0.2" Height="29.961" VerticalAlignment="Top"/>
+        <Button x:Name="calendar" Content="Button" Margin="274.666,7.332,0,0" VerticalAlignment="Top" Height="29.294" HorizontalAlignment="Left" Width="31.667" Click="calendar_Click" Opacity="0.2"/>
+        <Button x:Name="home_button" Content="Button" Margin="0,5.333,82.918,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Right" Width="31.667" Click="internal_indications_Click" Opacity="0.2"/>
+        <Button x:Name="back_button" Content="Button" Margin="0,5.666,26.334,0" VerticalAlignment="Top" Height="31.294" HorizontalAlignment="Right" Width="32.917" Click="internal_indications_Click" Opacity="0.2"/>
+        <Image x:Name="browser1" Margin="0,41.96,0,-18.96" Source="web.jpg" Visibility="Hidden"/>
+        <Image x:Name="empty" Margin="0,-15.04,0,-54.5" Source="empty_desk.jpg" Visibility="Hidden"/>
+        <Button x:Name="kritikosb" Content="Kritikos" HorizontalAlignment="Left" Margin="32.667,89.56,0,0" VerticalAlignment="Top" Width="88" Height="28.95" Click="kritikosb_Click" Visibility="Hidden"/>
+        <Button x:Name="caremarketb" Content="Care Market" HorizontalAlignment="Left" Margin="319.832,89.56,0,0" VerticalAlignment="Top" Width="88" Height="28.95" Click="caremarketb_Click" Visibility="Hidden"/>
+        <Button x:Name="efreshb" Content="E-Fresh" Margin="180.498,89.56,0,0" VerticalAlignment="Top" Height="28.95" HorizontalAlignment="Left" Width="88" Click="efreshb_Click" Visibility="Hidden"/>
+        <TextBlock x:Name="shop_text" HorizontalAlignment="Left" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37.46" Width="286.834" FontSize="20" Visibility="Hidden"><Run Text="Επιλέ"/><Run Text="ξ"/><Run Text="τε Κα"/><Run Text="τάστημα Αγορών"/></TextBlock>
+        <Image x:Name="kritikos" Margin="-15.5,137.5,-15,-18.96" Source="kritikos.jpg" Visibility="Hidden"/>
+        <Image x:Name="efresh" Margin="-15.5,137.5,-16,-32" Source="efresh.jpg" Visibility="Hidden"/>
+        <Image x:Name="care_market" Margin="-15.5,137.5,-16,-54.5" Source="care_market.jpg" Visibility="Hidden"/>
+        <Image x:Name="calendar_pic" Margin="0,41.626,10,26.374" Source="7d6785731c6cfa9978a66edc97e8c978.png" Visibility="Hidden"/>
+        <TextBlock x:Name="weather_text" HorizontalAlignment="Left" Margin="42.812,57.96,0,0" TextWrapping="Wrap" Text="Πρόγνωση Καιρού" VerticalAlignment="Top" Width="174.52" FontSize="20" Visibility="Hidden"/>
+        <Image x:Name="weather_pic" Margin="10,118.51,10,26.374" Source="weather.jpg" Visibility="Hidden"/>
+        <Image x:Name="recipes1" Margin="10,41.96,0,26.374" Source="recipes.jpg" Visibility="Hidden"/>
+        <TextBox x:Name="search_text" HorizontalAlignment="Left" Height="23" Margin="287.832,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Button x:Name="search_b" Content="GO" HorizontalAlignment="Left" Margin="421,48,0,0" VerticalAlignment="Top" Width="25.667" Height="23" Visibility="Hidden"/>
 
     </Grid>
 </Window>

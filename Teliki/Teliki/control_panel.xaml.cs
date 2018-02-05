@@ -21,7 +21,17 @@ namespace Teliki
     {
         public control_panel()
         {
-            InitializeComponent();
+            InitializeComponent();    
+        }
+
+        private void lights_l_Checked(object sender, RoutedEventArgs e)
+        {           
+            
+        }
+
+        private void tv_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

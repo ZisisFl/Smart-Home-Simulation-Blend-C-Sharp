@@ -57,30 +57,6 @@
     <Compile Include="control_panel.xaml.cs">
       <DependentUpon>control_panel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="sf_browser.xaml.cs">
-      <DependentUpon>sf_browser.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="sf_calendar.xaml.cs">
-      <DependentUpon>sf_calendar.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="sf_internal_indications.xaml.cs">
-      <DependentUpon>sf_internal_indications.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="sf_internal_view.xaml.cs">
-      <DependentUpon>sf_internal_view.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="sf_online_shop.xaml.cs">
-      <DependentUpon>sf_online_shop.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="sf_radio.xaml.cs">
-      <DependentUpon>sf_radio.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="sf_recipes.xaml.cs">
-      <DependentUpon>sf_recipes.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="sf_weather.xaml.cs">
-      <DependentUpon>sf_weather.xaml</DependentUpon>
-    </Compile>
     <Compile Include="smart_fridge.xaml.cs">
       <DependentUpon>smart_fridge.xaml</DependentUpon>
     </Compile>
@@ -96,38 +72,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="kitchen.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="sf_browser.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="sf_calendar.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="sf_internal_indications.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="sf_internal_view.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="sf_online_shop.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="sf_radio.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="sf_recipes.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="sf_weather.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -224,6 +168,36 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="products.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hero-roku-homescreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="web.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fridge_desk_empty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="empty_desk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kritikos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="efresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="care_market.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="7d6785731c6cfa9978a66edc97e8c978.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="weather.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recipes.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

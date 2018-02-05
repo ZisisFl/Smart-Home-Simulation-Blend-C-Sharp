@@ -30,5 +30,6 @@
         </Button>
         <Image x:Name="image" HorizontalAlignment="Right" Height="161.5" Margin="0,0,169,28" VerticalAlignment="Bottom" Width="82" Source="phone_icon.png" PreviewMouseLeftButtonDown="image_PreviewMouseLeftButtonDown"/>
         <Button x:Name="control_panel" Content="control" Margin="600.5,0,604.5,157.04" VerticalAlignment="Bottom" Click="control_panel_Click"/>
+        <Image x:Name="tv_open" Margin="515,312,555.5,285.5" Source="hero-roku-homescreen.png" Visibility="Hidden"/>
     </Grid>
 </Window>

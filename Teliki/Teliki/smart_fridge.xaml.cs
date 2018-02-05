@@ -26,52 +26,72 @@ namespace Teliki
 
         private void browser_Click(object sender, RoutedEventArgs e)
         {
-            var Form = new sf_browser();
-            Form.Show();
-            this.Hide();
+            browser1.Visibility = Visibility.Visible;
         }
 
         private void weather_Click(object sender, RoutedEventArgs e)
         {
-            var Form = new sf_weather();
-            Form.Show();
-            this.Hide();
+            empty.Visibility = Visibility.Visible;
+            weather_text.Visibility = Visibility.Visible;
+            weather_pic.Visibility = Visibility.Visible;
         }
 
         private void radio_Click(object sender, RoutedEventArgs e)
         {
-            var Form = new sf_radio();
-            Form.Show();
-            this.Hide();
+
         }
 
         private void internal_indications_Click(object sender, RoutedEventArgs e)
         {
-            var Form = new sf_internal_indications();
-            Form.Show();
-            this.Hide();
+            empty.Visibility = Visibility.Visible;
+
         }
 
         private void recipes_Click(object sender, RoutedEventArgs e)
         {
-            var Form = new sf_recipes();
-            Form.Show();
-            this.Hide();
+            empty.Visibility = Visibility.Visible;
+            recipes1.Visibility = Visibility.Visible;
+            search_b.Visibility = Visibility.Visible;
+            search_text.Visibility = Visibility.Visible;
         }
 
         private void online_shop_Click(object sender, RoutedEventArgs e)
         {
-            var Form = new sf_online_shop();
-            Form.Show();
-            this.Hide();
+            empty.Visibility = Visibility.Visible;
+            kritikosb.Visibility = Visibility.Visible;
+            caremarketb.Visibility = Visibility.Visible;
+            efreshb.Visibility = Visibility.Visible;
+            shop_text.Visibility = Visibility.Visible;
         }
 
         private void calendar_Click(object sender, RoutedEventArgs e)
         {
-            var Form = new sf_calendar();
-            Form.Show();
-            this.Hide();
+            empty.Visibility = Visibility.Visible;
+            calendar_pic.Visibility = Visibility.Visible;
         }
 
+        private void caremarketb_Click(object sender, RoutedEventArgs e)
+        {
+            care_market.Visibility = Visibility.Visible;
+
+            efresh.Visibility = Visibility.Hidden;
+            kritikos.Visibility = Visibility.Hidden;
+        }
+
+        private void efreshb_Click(object sender, RoutedEventArgs e)
+        {
+            efresh.Visibility = Visibility.Visible;
+
+            care_market.Visibility = Visibility.Hidden;
+            kritikos.Visibility = Visibility.Hidden;
+        }
+
+        private void kritikosb_Click(object sender, RoutedEventArgs e)
+        {
+            kritikos.Visibility = Visibility.Visible;
+
+            efresh.Visibility = Visibility.Hidden;
+            care_market.Visibility = Visibility.Hidden;
+        }
     }
 }
