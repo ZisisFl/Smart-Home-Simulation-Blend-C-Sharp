@@ -38,7 +38,10 @@ namespace Teliki
 
         private void radio_Click(object sender, RoutedEventArgs e)
         {
-
+            empty.Visibility = Visibility.Visible;
+            radio_img.Visibility = Visibility.Visible;
+            radio_text.Visibility = Visibility.Visible;
+            slider.Visibility = Visibility.Visible;
         }
 
         private void internal_indications_Click(object sender, RoutedEventArgs e)
@@ -92,6 +95,12 @@ namespace Teliki
 
             efresh.Visibility = Visibility.Hidden;
             care_market.Visibility = Visibility.Hidden;
+        }
+
+        private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            string value = string.Format("{0}", e.NewValue.ToString());
+            radio_text.Text = value;
         }
     }
 }
