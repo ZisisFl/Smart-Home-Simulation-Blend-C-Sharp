@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace Teliki
 {
     /// <summary>
@@ -19,10 +20,12 @@ namespace Teliki
     /// </summary>
     public partial class smart_fridge : Window
     {
+        string value;
+
         public smart_fridge()
         {
             InitializeComponent();
-        }
+        }       
 
         private void browser_Click(object sender, RoutedEventArgs e)
         {
@@ -47,7 +50,12 @@ namespace Teliki
         private void internal_indications_Click(object sender, RoutedEventArgs e)
         {
             empty.Visibility = Visibility.Visible;
-
+            internal_indications_text.Visibility = Visibility.Visible;
+            temp_text.Visibility = Visibility = Visibility.Visible;
+            humidity_text.Visibility = Visibility.Visible;
+            temp.Visibility = Visibility.Visible;
+            humidity.Visibility = Visibility.Visible;
+            temp_slider.Visibility = Visibility.Visible;
         }
 
         private void recipes_Click(object sender, RoutedEventArgs e)
@@ -99,8 +107,34 @@ namespace Teliki
 
         private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            string value = string.Format("{0}", e.NewValue.ToString());
+            value = string.Format("{0}", e.NewValue.ToString());
             radio_text.Text = value;
+        }
+
+        private void save_station_Click(object sender, RoutedEventArgs e)
+        {
+            station_text.Text = value;
+        }
+
+        private void temp_slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            double temperature = e.NewValue;
+            String.Format("{0:0.00}", temperature);
+            //Math.Round(temperature, 2);
+            temp.Text = temperature.ToString(); ;
+
+            //string temperature = string.Format("{0}", e.NewValue.ToString());
+            //temp.Text = temperature;
+        }
+
+        private void home_button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void back_button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

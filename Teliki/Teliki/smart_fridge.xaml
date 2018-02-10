@@ -20,8 +20,8 @@
         <Button x:Name="recipes" Content="Button" Margin="146,6.665,0,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Left" Width="31.333" Click="recipes_Click" Opacity="0.2"/>
         <Button x:Name="online_shop" Content="Button" Margin="90,6.665,0,0" HorizontalAlignment="Left" Width="32" Click="online_shop_Click" Opacity="0.2" Height="29.961" VerticalAlignment="Top"/>
         <Button x:Name="calendar" Content="Button" Margin="274.666,7.332,0,0" VerticalAlignment="Top" Height="29.294" HorizontalAlignment="Left" Width="31.667" Click="calendar_Click" Opacity="0.2"/>
-        <Button x:Name="home_button" Content="Button" Margin="0,5.333,82.918,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Right" Width="31.667" Click="internal_indications_Click" Opacity="0.2"/>
-        <Button x:Name="back_button" Content="Button" Margin="0,5.666,26.334,0" VerticalAlignment="Top" Height="31.294" HorizontalAlignment="Right" Width="32.917" Click="internal_indications_Click" Opacity="0.2"/>
+        <Button x:Name="home_button" Content="Button" Margin="0,5.333,82.918,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Right" Width="31.667" Click="home_button_Click" Opacity="0.2"/>
+        <Button x:Name="back_button" Content="Button" Margin="0,5.666,26.334,0" VerticalAlignment="Top" Height="31.294" HorizontalAlignment="Right" Width="32.917" Opacity="0.2" Click="back_button_Click"/>
         <Image x:Name="browser1" Margin="0,41.96,0,-18.96" Source="web.jpg" Visibility="Hidden"/>
         <Image x:Name="empty" Margin="0,-15.04,0,-54.5" Source="empty_desk.jpg" Visibility="Hidden"/>
         <Button x:Name="kritikosb" Content="Kritikos" HorizontalAlignment="Left" Margin="32.667,89.56,0,0" VerticalAlignment="Top" Width="88" Height="28.95" Click="kritikosb_Click" Visibility="Hidden"/>
@@ -57,6 +57,41 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </TextBlock.RenderTransform><Run Text="   "/><Run Text="90.3"/></TextBlock>
+        <Button x:Name="save_station" Content="Button" HorizontalAlignment="Left" Margin="32.667,0,0,139.54" VerticalAlignment="Bottom" Width="200" Height="106.96" Click="save_station_Click" Opacity="0"/>
+        <TextBlock x:Name="station_text" HorizontalAlignment="Left" Margin="82.833,0,0,173.013" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="36" Width="94.5"/>
+        <TextBlock x:Name="internal_indications_text" HorizontalAlignment="Left" Margin="10,57.96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Text="Εσωτερικές Ενδείξεις" d:LayoutOverrides="HorizontalAlignment" Visibility="Hidden"/>
+        <TextBlock x:Name="temp_text" HorizontalAlignment="Left" Margin="55.432,157.046,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Text="Θερμοκρασία" d:LayoutOverrides="HorizontalAlignment" Visibility="Hidden"/>
+        <TextBlock x:Name="humidity_text" HorizontalAlignment="Left" Margin="385.7,157.046,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Text="Υγρασία" d:LayoutOverrides="HorizontalAlignment" RenderTransformOrigin="0.152,0.517" Visibility="Hidden"/>
+        <TextBlock x:Name="temp" HorizontalAlignment="Left" Margin="130.542,215.171,0,0" TextWrapping="Wrap" FontSize="48" Text="4°C" d:LayoutOverrides="HorizontalAlignment" Width="153.65" RenderTransformOrigin="0.5,0.5" Height="65.673" VerticalAlignment="Top" Visibility="Hidden">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="humidity" HorizontalAlignment="Left" Margin="421.432,218.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Text="80%" d:LayoutOverrides="HorizontalAlignment" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="2" ScaleX="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Slider x:Name="temp_slider" HorizontalAlignment="Left" Margin="55.432,332.5,0,0" VerticalAlignment="Top" Height="27" Width="146.9" RenderTransformOrigin="0.5,0.5" Maximum="6" SmallChange="0.2" TickPlacement="BottomRight" ValueChanged="temp_slider_ValueChanged" Visibility="Hidden">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
 
     </Grid>
 </Window>
