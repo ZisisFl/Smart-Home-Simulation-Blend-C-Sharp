@@ -107,8 +107,8 @@ namespace Teliki
 
         private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            value = string.Format("{0}", e.NewValue.ToString());
-            radio_text.Text = value;
+            double value = e.NewValue;
+            radio_text.Text = String.Format("{0:000.0}", value);
         }
 
         private void save_station_Click(object sender, RoutedEventArgs e)
@@ -119,12 +119,7 @@ namespace Teliki
         private void temp_slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             double temperature = e.NewValue;
-            String.Format("{0:0.00}", temperature);
-            //Math.Round(temperature, 2);
-            temp.Text = temperature.ToString(); ;
-
-            //string temperature = string.Format("{0}", e.NewValue.ToString());
-            //temp.Text = temperature;
+            temp.Text = String.Format("{0:0.0}", temperature) + "°C";
         }
 
         private void home_button_Click(object sender, RoutedEventArgs e)
