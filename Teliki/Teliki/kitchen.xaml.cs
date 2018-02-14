@@ -44,7 +44,7 @@ namespace Teliki
             Form.Show();
         }
 
-        private void smart_fridge_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void smart_fridge_Click(object sender, RoutedEventArgs e)
         {
             var Form = new smart_fridge();
             Form.Show();

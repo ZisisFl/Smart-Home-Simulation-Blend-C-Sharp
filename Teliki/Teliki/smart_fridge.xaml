@@ -7,21 +7,20 @@
         mc:Ignorable="d"
         Title="smart_fridge" 
         ResizeMode="NoResize"
-        WindowStartupLocation="CenterOwner" 
         Width="1280" Height="720">
     <!--WindowStyle="None"-->
     <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
         <Image x:Name="image" Margin="0" Source="fridge_desk_icons.jpg"/>
 
-        <Button x:Name="browser" Content="Button" Margin="32.667,5.999,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30.627" Width="30.333" Click="browser_Click" Opacity="0.2"/>
-        <Button x:Name="weather" Content="Button" Margin="338.666,5.333,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30.627" Width="34.001" Click="weather_Click" Opacity="0.2"/>
-        <Button x:Name="radio" Content="Button" Margin="209.999,7.332,0,0" VerticalAlignment="Top" Height="29.294" Click="radio_Click" HorizontalAlignment="Left" Width="32" Opacity="0.2"/>
-        <Button x:Name="internal_indications" Content="Button" Margin="396.665,5.999,0,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Left" Width="32.667" Click="internal_indications_Click" Opacity="0.2"/>
-        <Button x:Name="recipes" Content="Button" Margin="146,6.665,0,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Left" Width="31.333" Click="recipes_Click" Opacity="0.2"/>
-        <Button x:Name="online_shop" Content="Button" Margin="90,6.665,0,0" HorizontalAlignment="Left" Width="32" Click="online_shop_Click" Opacity="0.2" Height="29.961" VerticalAlignment="Top"/>
-        <Button x:Name="calendar" Content="Button" Margin="274.666,7.332,0,0" VerticalAlignment="Top" Height="29.294" HorizontalAlignment="Left" Width="31.667" Click="calendar_Click" Opacity="0.2"/>
-        <Button x:Name="home_button" Content="Button" Margin="0,5.333,82.918,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Right" Width="31.667" Click="home_button_Click" Opacity="0.2"/>
-        <Button x:Name="back_button" Content="Button" Margin="0,5.666,26.334,0" VerticalAlignment="Top" Height="31.294" HorizontalAlignment="Right" Width="32.917" Opacity="0.2" Click="back_button_Click"/>
+        <Button x:Name="browser" Content="" Margin="29.667,5.333,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="31.959" Width="34.666" Click="browser_Click" Opacity="0.2"/>
+        <Button x:Name="weather" Content="" Margin="338.666,5.333,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="31.959" Width="34.668" Click="weather_Click" Opacity="0.2"/>
+        <Button x:Name="radio" Content="" Margin="207.999,5.333,0,0" VerticalAlignment="Top" Height="31.627" Click="radio_Click" HorizontalAlignment="Left" Width="36" Opacity="0.2"/>
+        <Button x:Name="internal_indications" Content="" Margin="396.665,5.333,0,0" VerticalAlignment="Top" Height="31.959" HorizontalAlignment="Left" Width="32.667" Click="internal_indications_Click" Opacity="0.2"/>
+        <Button x:Name="recipes" Content="" Margin="148.333,5.333,0,0" VerticalAlignment="Top" Height="31.959" HorizontalAlignment="Left" Width="28.333" Click="recipes_Click" Opacity="0.2"/>
+        <Button x:Name="online_shop" Content="" Margin="87.334,6.332,0,0" HorizontalAlignment="Left" Width="33.333" Click="online_shop_Click" Opacity="0.2" Height="30.96" VerticalAlignment="Top"/>
+        <Button x:Name="calendar" Content="" Margin="272.666,7.332,0,0" VerticalAlignment="Top" Height="29.294" HorizontalAlignment="Left" Width="35.334" Click="calendar_Click" Opacity="0.2"/>
+        <Button x:Name="home_button" Content="" Margin="0,5.333,82.918,0" VerticalAlignment="Top" Height="30.627" HorizontalAlignment="Right" Width="31.667" Click="home_button_Click" Opacity="0.2"/>
+        <Button x:Name="back_button" Content="" Margin="0,5.666,26.334,0" VerticalAlignment="Top" Height="31.294" HorizontalAlignment="Right" Width="32.917" Opacity="0.2" Click="back_button_Click"/>
         <Image x:Name="browser1" Margin="0,41.96,0,-18.96" Source="web.jpg" Visibility="Hidden"/>
         <Image x:Name="empty" Margin="0,-15.04,0,-54.5" Source="empty_desk.jpg" Visibility="Hidden"/>
         <Button x:Name="kritikosb" Content="Kritikos" HorizontalAlignment="Left" Margin="32.667,89.56,0,0" VerticalAlignment="Top" Width="88" Height="28.95" Click="kritikosb_Click" Visibility="Hidden"/>
@@ -37,18 +36,8 @@
         <Image x:Name="recipes1" Margin="10,41.96,0,26.374" Source="recipes.jpg" Visibility="Hidden"/>
         <TextBox x:Name="search_text" HorizontalAlignment="Left" Height="23" Margin="287.832,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
         <Button x:Name="search_b" Content="GO" HorizontalAlignment="Left" Margin="421,48,0,0" VerticalAlignment="Top" Width="25.667" Height="23" Visibility="Hidden"/>
-        <Image x:Name="radio_img" Margin="0,41.96,0,10" Source="radio-app-samsung-galaxy-s3.jpg" Visibility="Hidden"/>
-        <Slider x:Name="slider" HorizontalAlignment="Right" Margin="0,287.427,222.833,0" Maximum="108" Minimum="85.5" Width="201.834" FontSize="20" LargeChange="5" RenderTransformOrigin="0.5,0.5" Height="32.666" VerticalAlignment="Top" BorderThickness="0" TickPlacement="Both" Value="85" SmallChange="0.3" Visibility="Hidden">
-            <Slider.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="4" ScaleX="3"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Slider.RenderTransform>
-        </Slider>
-        <TextBlock x:Name="radio_text" Text="{Binding ElementName=slider, Path=Value}" HorizontalAlignment="Left" Margin="183.709,317.5,0,271.874" TextWrapping="Wrap" Width="294.706" FontSize="72" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontFamily="Myanmar Text" Visibility="Hidden">
+        <Image x:Name="radio_img" Margin="0,41.96,0,10" Source="radio.jpg" Visibility="Hidden"/>
+        <TextBlock x:Name="radio_text" Margin="262.459,296.5,583.335,292.874" TextWrapping="Wrap" FontSize="48" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontFamily="Myanmar Text" Text="87.5MHz" Visibility="Hidden">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="2" ScaleX="2"/>
@@ -56,12 +45,9 @@
                     <RotateTransform/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </TextBlock.RenderTransform><Run Text="   "/><Run Text="90.3"/></TextBlock>
-        <Button x:Name="save_station" Content="Button" HorizontalAlignment="Left" Margin="32.667,0,0,139.54" VerticalAlignment="Bottom" Width="200" Height="106.96" Click="save_station_Click" Opacity="0"/>
-        <TextBlock x:Name="station_text" HorizontalAlignment="Left" Margin="82.833,0,0,173.013" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="36" Width="94.5"/>
+            </TextBlock.RenderTransform></TextBlock>
         <TextBlock x:Name="internal_indications_text" HorizontalAlignment="Left" Margin="10,57.96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Text="Εσωτερικές Ενδείξεις" d:LayoutOverrides="HorizontalAlignment" Visibility="Hidden"/>
-        <TextBlock x:Name="temp_text" HorizontalAlignment="Left" Margin="55.432,157.046,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Text="Θερμοκρασία" d:LayoutOverrides="HorizontalAlignment" Visibility="Hidden"/>
-        <TextBlock x:Name="humidity_text" HorizontalAlignment="Left" Margin="385.7,157.046,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Text="Υγρασία" d:LayoutOverrides="HorizontalAlignment" RenderTransformOrigin="0.152,0.517" Visibility="Hidden"/>
+        <TextBlock x:Name="humidity_text" HorizontalAlignment="Left" Margin="52.812,157.046,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Text="Θερμοκρασία                            Υγρασία" RenderTransformOrigin="0.152,0.517" Visibility="Hidden"/>
         <TextBlock x:Name="temp" HorizontalAlignment="Left" Margin="130.542,215.171,0,0" TextWrapping="Wrap" FontSize="48" Text="4.0°C" d:LayoutOverrides="HorizontalAlignment" Width="153.65" RenderTransformOrigin="0.5,0.5" Height="65.673" VerticalAlignment="Top" Visibility="Hidden">
             <TextBlock.RenderTransform>
                 <TransformGroup>
@@ -86,6 +72,16 @@
             <Slider.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+        <Slider x:Name="radio_slider" HorizontalAlignment="Right" Margin="0,294.5,193.25,0" Width="255" Maximum="106" Minimum="87.5" TickPlacement="Both" RenderTransformOrigin="0.5,0.5" Height="32.5" VerticalAlignment="Top" ValueChanged="radio_slider_ValueChanged" Visibility="Hidden">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="3" ScaleX="2"/>
                     <SkewTransform/>
                     <RotateTransform/>
                     <TranslateTransform/>

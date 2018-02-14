@@ -204,7 +204,13 @@
     <Resource Include="recipes.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="radio-app-samsung-galaxy-s3.jpg" />
+    <Resource Include="radio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="smart_wardrobe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="everyday_m.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
