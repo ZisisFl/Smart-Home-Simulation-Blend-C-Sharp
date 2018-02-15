@@ -19,7 +19,8 @@ namespace Teliki
     /// </summary>
     public partial class smart_wardrobe : Window
     {
-        bool male_clicked = true;
+        bool gender_clicked = true;
+
         public smart_wardrobe()
         {
             InitializeComponent();
@@ -27,17 +28,72 @@ namespace Teliki
 
         private void male_Click(object sender, RoutedEventArgs e)
         {
-            male_clicked = true;
+            gender_clicked = true;
+                male.Background = Brushes.Black;
+                male.Foreground = Brushes.White;
+                female.Background = Brushes.White;
+                female.Foreground = Brushes.Black;                          
+        }
+
+        private void female_Click(object sender, RoutedEventArgs e)
+        {
+            gender_clicked = false;
+            female.Background = Brushes.Black;
+            female.Foreground = Brushes.White;
+            male.Background = Brushes.White;
+            male.Foreground = Brushes.Black;
+        }
+
+        private void everyday_Click(object sender, RoutedEventArgs e)
+        {
+            Hide_Prev();
+
+            if (gender_clicked == true)
+                everyday_m.Visibility = Visibility.Visible;
+            else
+                everyday_w.Visibility = Visibility.Visible;
         }
 
         private void formal_Click(object sender, RoutedEventArgs e)
         {
-            if (male_clicked == true)
-            {
-                clothes.Source = new BitmapImage(new Uri(@"pack://application:,,,/Virvou;component/Resources/formal_m.png"));
-            }
+            Hide_Prev();
+
+            if (gender_clicked == true)
+                formal_m.Visibility = Visibility.Visible;
             else
-                clothes.Source = new BitmapImage(new Uri(@"\Resources\formal_w.png"));
+                formal_w.Visibility = Visibility.Visible;
+        }
+
+        private void gym_Click(object sender, RoutedEventArgs e)
+        {
+            Hide_Prev();
+
+            if (gender_clicked == true)
+                gym_m.Visibility = Visibility.Visible;
+            else
+                gym_w.Visibility = Visibility.Visible;
+        }
+
+        private void work_Click(object sender, RoutedEventArgs e)
+        {
+            Hide_Prev();
+
+            if (gender_clicked == true)
+                work_m.Visibility = Visibility.Visible;
+            else
+                work_w.Visibility = Visibility.Visible;
+        }
+
+        public void Hide_Prev()
+        {
+            everyday_m.Visibility = Visibility.Hidden;
+            everyday_w.Visibility = Visibility.Hidden;
+            formal_m.Visibility = Visibility.Hidden;
+            formal_w.Visibility = Visibility.Hidden;
+            gym_m.Visibility = Visibility.Hidden;
+            gym_w.Visibility = Visibility.Hidden;
+            work_m.Visibility = Visibility.Hidden;
+            work_w.Visibility = Visibility.Hidden;
         }
     }
 }

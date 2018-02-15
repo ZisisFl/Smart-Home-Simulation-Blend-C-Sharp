@@ -212,6 +212,36 @@
   <ItemGroup>
     <Resource Include="everyday_m.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="livingroom_dark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kitchen_dark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bedroom_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="formal_m.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="gym_m.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="work_m.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="everyday_w.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="formal_w.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="gym_w.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="work_w.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

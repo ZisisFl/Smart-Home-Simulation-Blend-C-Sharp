@@ -9,7 +9,8 @@
         Title="kitchen" Height="720" Width="1280" Margin="0,0,0,10">
     <Grid>
         <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
-            <Image x:Name="kitchen1" Margin="0" Source="kitchen.jpg"/>
+            <Image x:Name="kitchen1" Margin="0" Source="kitchen_dark.jpg"/>
+            <Image x:Name="lights_on" Margin="0" Source="kitchen.jpg" Visibility="Hidden"/>
             <Button x:Name="bedroom_k" Content="Bedroom" Margin="917.671,333.187,-304.496,351.042" Click="bedroom_k_Click" Foreground="Black" Opacity="0.6" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="666.825">
                 <Button.RenderTransform>
                     <TransformGroup>

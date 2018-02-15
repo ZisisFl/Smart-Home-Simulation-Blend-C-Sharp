@@ -8,7 +8,8 @@
         WindowStartupLocation="CenterScreen" 
         Title="bedroom" Height="720" Width="1280">
     <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
-        <Image x:Name="bedroom2" Margin="0" Source="bedroom.png"/>
+        <Image x:Name="bedroom2" Margin="0" Source="bedroom_dark.png"/>
+        <Image x:Name="lights_on" Margin="0" Source="bedroom.png" Visibility="Hidden"/>
         <Button x:Name="kitchen_b" Margin="917.671,327.187,-304.496,357.042" Click="kitchen_b_Click" Foreground="Black" Opacity="0.6" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="666.825" Content="Kitchen">
             <Button.RenderTransform>
                 <TransformGroup>

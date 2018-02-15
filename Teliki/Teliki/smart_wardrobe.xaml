@@ -8,14 +8,21 @@
         Title="smart_wardrobe" Height="720" Width="1280">
     <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
         <Image x:Name="image" Margin="-144,0,266,30" Source="smart_wardrobe.jpg"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,10,42.71,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="49.767"><Run Text="Επιλογή Περίστασης"/><LineBreak/><Run/></TextBlock>
-        <Button x:Name="everyday" Content="Καθημερινό" HorizontalAlignment="Right" Margin="0,64.767,324,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,0,42.71,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="49.767"><Run Text="Επιλογή Περίστασης"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="everyday" Content="Καθημερινό" HorizontalAlignment="Right" Margin="0,64.767,324,0" VerticalAlignment="Top" Width="75" Click="everyday_Click"/>
         <Button x:Name="formal" Content="Επίσημο" HorizontalAlignment="Right" Margin="0,64.767,220.5,0" VerticalAlignment="Top" Width="75" Click="formal_Click"/>
-        <Button x:Name="gym" Content="Αθλητικό" HorizontalAlignment="Right" Margin="0,64.767,118,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="work" Content="Εργασίας" HorizontalAlignment="Right" Margin="0,64.767,18.5,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="male" Content="Αντρικό" HorizontalAlignment="Right" Margin="0,102,324,0" VerticalAlignment="Top" Width="75" Click="male_Click"/>
-        <Button x:Name="woman" Content="Γυναικείο" HorizontalAlignment="Right" Margin="0,102,18.5,0" VerticalAlignment="Top" Width="75"/>
-        <Image x:Name="clothes" HorizontalAlignment="Right" Margin="0,121.96,18.5,30" Width="380.5" Source="everyday_m.jpg"/>
+        <Button x:Name="gym" Content="Αθλητικό" HorizontalAlignment="Right" Margin="0,64.767,118,0" VerticalAlignment="Top" Width="75" Click="gym_Click"/>
+        <Button x:Name="work" Content="Εργασίας" HorizontalAlignment="Right" Margin="0,64.767,18.5,0" VerticalAlignment="Top" Width="75" Click="work_Click"/>
+        <Button x:Name="male" Content="Αντρικό" HorizontalAlignment="Right" Margin="0,102,324,0" VerticalAlignment="Top" Width="75" Click="male_Click" Foreground="White" Background="Black"/>
+        <Button x:Name="female" Content="Γυναικείο" HorizontalAlignment="Right" Margin="0,102,18.5,0" VerticalAlignment="Top" Width="75" Click="female_Click" Background="White" Foreground="#FF080101"/>
+        <Image x:Name="everyday_m" HorizontalAlignment="Right" Margin="0,121.96,18.5,30" Width="380.5" Source="everyday_m.jpg" Visibility="Hidden"/>
+        <Image x:Name="formal_m" HorizontalAlignment="Right" Margin="0,121.96,18.5,30" Width="380.5" Source="formal_m.jpg" Visibility="Hidden"/>
+        <Image x:Name="gym_m" HorizontalAlignment="Right" Margin="0,121.96,18.5,30" Width="380.5" Source="gym_m.jpg" Visibility="Hidden"/>
+        <Image x:Name="work_m" HorizontalAlignment="Right" Margin="0,121.96,18.5,30" Width="380.5" Source="work_m.jpg" Visibility="Hidden"/>
+        <Image x:Name="everyday_w" HorizontalAlignment="Right" Margin="0,121.96,18.5,30" Width="380.5" Source="everyday_w.jpg" Visibility="Hidden"/>
+        <Image x:Name="formal_w" HorizontalAlignment="Right" Margin="0,121.96,18.5,30" Width="380.5" Source="formal_w.jpg" Visibility="Hidden"/>
+        <Image x:Name="gym_w" HorizontalAlignment="Right" Margin="0,121.96,18.5,30" Width="380.5" Source="gym_w.jpg" Visibility="Hidden"/>
+        <Image x:Name="work_w" HorizontalAlignment="Right" Margin="0,121.96,18.5,30" Width="380.5" Source="work_w.jpg" Visibility="Hidden"/>
 
     </Grid>
 </Window>

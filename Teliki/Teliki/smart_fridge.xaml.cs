@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-//using System.Data.OleDb;
 
 
 namespace Teliki
@@ -21,7 +20,6 @@ namespace Teliki
     /// </summary>
     public partial class smart_fridge : Window  
     {
-        //OleDbConnection connect = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;" + "data source=" +"\\settings.accdb;");
         int prev_state = 0;
         int curr_state = 0;
 
