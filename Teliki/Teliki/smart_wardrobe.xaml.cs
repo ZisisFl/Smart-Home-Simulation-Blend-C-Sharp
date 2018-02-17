@@ -29,10 +29,10 @@ namespace Teliki
         private void male_Click(object sender, RoutedEventArgs e)
         {
             gender_clicked = true;
-                male.Background = Brushes.Black;
-                male.Foreground = Brushes.White;
-                female.Background = Brushes.White;
-                female.Foreground = Brushes.Black;                          
+            male.Background = Brushes.Black;
+            male.Foreground = Brushes.White;
+            female.Background = Brushes.White;
+            female.Foreground = Brushes.Black;                          
         }
 
         private void female_Click(object sender, RoutedEventArgs e)
