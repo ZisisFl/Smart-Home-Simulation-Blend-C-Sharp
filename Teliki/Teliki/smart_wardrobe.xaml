@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teliki"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="smart_wardrobe" Height="720" Width="1280">
     <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
         <Image x:Name="image" Margin="-144,0,266,30" Source="smart_wardrobe.jpg"/>

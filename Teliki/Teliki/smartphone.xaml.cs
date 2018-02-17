@@ -44,6 +44,7 @@ namespace Teliki
             checkBox_Copy4.Visibility = Visibility.Hidden;
             checkBox_Copy5.Visibility = Visibility.Hidden;
             checkBox_Copy6.Visibility = Visibility.Hidden;
+            bought.Visibility = Visibility.Hidden;
             //third buton
             discount.Visibility = Visibility.Hidden;
         }
@@ -65,6 +66,11 @@ namespace Teliki
             checkBox_Copy4.Visibility = Visibility.Visible;
             checkBox_Copy5.Visibility = Visibility.Visible;
             checkBox_Copy6.Visibility = Visibility.Visible;           
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            bought.Visibility = Visibility.Visible;
         }
     }
 }

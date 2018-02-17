@@ -18,10 +18,10 @@
         <Button x:Name="sales" Content="Εκπτώσεις" Margin="54.5,386,0,0" FontSize="20" Height="46" VerticalAlignment="Top" HorizontalAlignment="Left" Width="275" Click="sales_Click"/>
         <Button x:Name="products_needed" Content="Προϊόντα που τελειώνουν" Margin="54.5,297.5,0,0" FontSize="20" Height="46" VerticalAlignment="Top" HorizontalAlignment="Left" Width="275" d:LayoutOverrides="VerticalAlignment" Click="products_needed_Click"/>
         <Image x:Name="fridge_inside" Margin="30,142,39.5,116.5" Source="fridge_inside.jpg" Visibility="Hidden"/>
-        <Button x:Name="back_phone" Content="Button" Margin="88.5,0,0,81.04" HorizontalAlignment="Left" Width="36" Opacity="0.2" Click="back_phone_Click" Height="35.46" VerticalAlignment="Bottom"/>
+        <Button x:Name="back_phone" Content="Button" Margin="88.5,0,0,81.04" HorizontalAlignment="Left" Width="36" Opacity="0" Click="back_phone_Click" Height="35.46" VerticalAlignment="Bottom"/>
         <Image x:Name="discount" Margin="30,150,39.5,127" Source="discounts.jpg" Visibility="Hidden"/>
         <Image x:Name="products" Margin="30,153.22,39.5,126.5" Source="products.jpg" Visibility="Hidden"/>
-        <Button x:Name="button" Content="Άμεση Αγορά Προϊόντων" Margin="54.5,0,61,154" VerticalAlignment="Bottom" Height="37.96" FontSize="16" Visibility="Hidden"/>
+        <Button x:Name="button" Content="Άμεση Αγορά Προϊόντων" Margin="54.5,0,61,154" VerticalAlignment="Bottom" Height="37.96" FontSize="16" Click="button_Click" Visibility="Hidden"/>
         <CheckBox x:Name="checkBox" Content="" Margin="0,201.5,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
         <CheckBox x:Name="checkBox_Copy" Content="" Margin="0,221.598,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
         <CheckBox x:Name="checkBox_Copy1" Content="" Margin="0,241.696,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
@@ -30,5 +30,7 @@
         <CheckBox x:Name="checkBox_Copy4" Content="" Margin="0,302.499,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
         <CheckBox x:Name="checkBox_Copy5" Content="" Margin="0,322.597,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
         <CheckBox x:Name="checkBox_Copy6" Content="" Margin="0,343.5,124.271,0" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Hidden"/>
+        <TextBlock x:Name="bought" Margin="65.229,0,74.5,252.54" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="30.3" FontSize="20" Visibility="Hidden"><Run Text="Επιτυχής αγορά προΪόντων"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="back_phone_Copy" Content="Button" Margin="178.5,0,189.5,81.04" Opacity="0" Click="back_phone_Click" Height="35.46" VerticalAlignment="Bottom" RenderTransformOrigin="3.25,0.113"/>
     </Grid>
 </Window>

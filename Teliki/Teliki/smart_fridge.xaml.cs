@@ -184,101 +184,102 @@ namespace Teliki
 
         private void back_button_Click(object sender, RoutedEventArgs e)
         {
-            if (curr_state == 1)
-            {
-                browser1.Visibility = Visibility.Hidden;
-            }
-            else if (curr_state == 2)
-            {
-                weather_text.Visibility = Visibility.Hidden;
-                weather_pic.Visibility = Visibility.Hidden;
-            }
-            else if (curr_state == 3)
-            {
-                radio_img.Visibility = Visibility.Hidden;
-                radio_text.Visibility = Visibility.Hidden;
-                radio_slider.Visibility = Visibility.Hidden;
-            }
-            else if (curr_state == 4)
-            {
-                internal_indications_text.Visibility = Visibility.Hidden;
-                humidity_text.Visibility = Visibility.Hidden;
-                temp.Visibility = Visibility.Hidden;
-                humidity.Visibility = Visibility.Hidden;
-                temp_slider.Visibility = Visibility.Hidden;
-            }
-            else if (curr_state == 5)
-            {
-                recipes1.Visibility = Visibility.Hidden;
-                search_b.Visibility = Visibility.Hidden;
-                search_text.Visibility = Visibility.Hidden;
-            }
-            else if (curr_state == 6)
-            {
-                kritikos.Visibility = Visibility.Hidden;
-                efresh.Visibility = Visibility.Hidden;
-                care_market.Visibility = Visibility.Hidden;
+            home_button_Click(this, null);
+            /* if (curr_state == 1)
+             {
+                 browser1.Visibility = Visibility.Hidden;
+             }
+             else if (curr_state == 2)
+             {
+                 weather_text.Visibility = Visibility.Hidden;
+                 weather_pic.Visibility = Visibility.Hidden;
+             }
+             else if (curr_state == 3)
+             {
+                 radio_img.Visibility = Visibility.Hidden;
+                 radio_text.Visibility = Visibility.Hidden;
+                 radio_slider.Visibility = Visibility.Hidden;
+             }
+             else if (curr_state == 4)
+             {
+                 internal_indications_text.Visibility = Visibility.Hidden;
+                 humidity_text.Visibility = Visibility.Hidden;
+                 temp.Visibility = Visibility.Hidden;
+                 humidity.Visibility = Visibility.Hidden;
+                 temp_slider.Visibility = Visibility.Hidden;
+             }
+             else if (curr_state == 5)
+             {
+                 recipes1.Visibility = Visibility.Hidden;
+                 search_b.Visibility = Visibility.Hidden;
+                 search_text.Visibility = Visibility.Hidden;
+             }
+             else if (curr_state == 6)
+             {
+                 kritikos.Visibility = Visibility.Hidden;
+                 efresh.Visibility = Visibility.Hidden;
+                 care_market.Visibility = Visibility.Hidden;
 
-                kritikosb.Visibility = Visibility.Hidden;
-                caremarketb.Visibility = Visibility.Hidden;
-                efreshb.Visibility = Visibility.Hidden;
-                shop_text.Visibility = Visibility.Hidden;
-            }
-            else if (curr_state == 7)
-            {
-                calendar_pic.Visibility = Visibility.Hidden;
-            }
+                 kritikosb.Visibility = Visibility.Hidden;
+                 caremarketb.Visibility = Visibility.Hidden;
+                 efreshb.Visibility = Visibility.Hidden;
+                 shop_text.Visibility = Visibility.Hidden;
+             }
+             else if (curr_state == 7)
+             {
+                 calendar_pic.Visibility = Visibility.Hidden;
+             }
 
 
 
-            if (prev_state == 1)
-            {
-                browser1.Visibility = Visibility.Visible;
-            }
-            else if (prev_state == 2)
-            {
-                weather_text.Visibility = Visibility.Visible;
-                weather_pic.Visibility = Visibility.Visible;
-            }
-            else if (prev_state == 3)
-            {
-                radio_img.Visibility = Visibility.Visible;
-                radio_text.Visibility = Visibility.Visible;
-                radio_slider.Visibility = Visibility.Visible;
-            }
-            else if (prev_state == 4)
-            {
-                internal_indications_text.Visibility = Visibility.Visible;
-                humidity_text.Visibility = Visibility.Visible;
-                temp.Visibility = Visibility.Visible;
-                humidity.Visibility = Visibility.Visible;
-                temp_slider.Visibility = Visibility.Visible;
-            }
-            else if (prev_state == 5)
-            {
-                recipes1.Visibility = Visibility.Visible;
-                search_b.Visibility = Visibility.Visible;
-                search_text.Visibility = Visibility.Visible;
-            }
-            else if (prev_state == 6)
-            {
-                kritikos.Visibility = Visibility.Visible;
-                efresh.Visibility = Visibility.Visible;
-                care_market.Visibility = Visibility.Visible;
+             if (prev_state == 1)
+             {
+                 browser1.Visibility = Visibility.Visible;
+             }
+             else if (prev_state == 2)
+             {
+                 weather_text.Visibility = Visibility.Visible;
+                 weather_pic.Visibility = Visibility.Visible;
+             }
+             else if (prev_state == 3)
+             {
+                 radio_img.Visibility = Visibility.Visible;
+                 radio_text.Visibility = Visibility.Visible;
+                 radio_slider.Visibility = Visibility.Visible;
+             }
+             else if (prev_state == 4)
+             {
+                 internal_indications_text.Visibility = Visibility.Visible;
+                 humidity_text.Visibility = Visibility.Visible;
+                 temp.Visibility = Visibility.Visible;
+                 humidity.Visibility = Visibility.Visible;
+                 temp_slider.Visibility = Visibility.Visible;
+             }
+             else if (prev_state == 5)
+             {
+                 recipes1.Visibility = Visibility.Visible;
+                 search_b.Visibility = Visibility.Visible;
+                 search_text.Visibility = Visibility.Visible;
+             }
+             else if (prev_state == 6)
+             {
+                 kritikos.Visibility = Visibility.Visible;
+                 efresh.Visibility = Visibility.Visible;
+                 care_market.Visibility = Visibility.Visible;
 
-                kritikosb.Visibility = Visibility.Visible;
-                caremarketb.Visibility = Visibility.Visible;
-                efreshb.Visibility = Visibility.Visible;
-                shop_text.Visibility = Visibility.Visible;
-            }
-            else if (prev_state == 7)
-            {
-                calendar_pic.Visibility = Visibility.Visible;
-            }
-            else if (prev_state == 0)
-            {
-                home_button_Click(this, null);
-            }
+                 kritikosb.Visibility = Visibility.Visible;
+                 caremarketb.Visibility = Visibility.Visible;
+                 efreshb.Visibility = Visibility.Visible;
+                 shop_text.Visibility = Visibility.Visible;
+             }
+             else if (prev_state == 7)
+             {
+                 calendar_pic.Visibility = Visibility.Visible;
+             }
+             else if (prev_state == 0)
+             {
+                 home_button_Click(this, null);
+             } */
         }
     }
 }

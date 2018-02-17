@@ -9,7 +9,7 @@
         Title="bedroom" Height="720" Width="1280">
     <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
         <Image x:Name="bedroom2" Margin="0" Source="bedroom_dark.png"/>
-        <Image x:Name="lights_on" Margin="0" Source="bedroom.png" Visibility="Hidden"/>
+        <Image x:Name="lights" Margin="0" Source="bedroom.png" Visibility="Hidden"/>
         <Button x:Name="kitchen_b" Margin="917.671,327.187,-304.496,357.042" Click="kitchen_b_Click" Foreground="Black" Opacity="0.6" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="666.825" Content="Kitchen">
             <Button.RenderTransform>
                 <TransformGroup>
@@ -32,6 +32,6 @@
         </Button>
         <Image x:Name="image_Copy" HorizontalAlignment="Right" Height="161.5" Margin="0,0,169,28" VerticalAlignment="Bottom" Width="82" Source="phone_icon.png" PreviewMouseLeftButtonDown="image_Copy_PreviewMouseLeftButtonDown"/>
         <Button x:Name="wardrobe" Content="" HorizontalAlignment="Left" Margin="237.5,131.5,0,120.54" Width="393" Opacity="0.3" Click="wardrobe_Click" Foreground="{x:Null}" Background="#FFB28686"/>
-        <TextBlock x:Name="c_temp_text" HorizontalAlignment="Right" Margin="0,36,169,0" TextWrapping="Wrap" Text="18.0°C" VerticalAlignment="Top" Height="98.46" Width="191.79" FontSize="72"/>
+        <TextBlock x:Name="c_temp_text" HorizontalAlignment="Right" Margin="0,36,169,0" TextWrapping="Wrap" Text="18.0°C" VerticalAlignment="Top" Height="98.46" Width="191.79" FontSize="72" Visibility="Hidden"/>
     </Grid>
 </Window>

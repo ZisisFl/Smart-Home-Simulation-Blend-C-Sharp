@@ -25,13 +25,6 @@ namespace Teliki
             InitializeComponent();
         }
 
-        public living_roo(Visibility tv_open)
-        {
-            InitializeComponent();
-            this.tv_open.Visibility = tv_open;
-            //ola ta orismata tou
-        }
-
         private void bedroom_l_Click(object sender, RoutedEventArgs e)
         {
             var Form = new bedroom();

@@ -9,7 +9,7 @@
         Title="Living Room" Height="720" Width="1280" Margin="0,0,0,10">
     <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
         <Image x:Name="living_room" Margin="0" Source="livingroom_dark.jpg"/>
-        <Image x:Name="lights_on" Margin="0" Source="livingroom.jpg" Visibility="Hidden"/>
+        <Image x:Name="lights" Margin="0" Source="livingroom.jpg" Visibility="Hidden"/>
         <Button x:Name="kitchen_l" Content="Kitchen" Margin="920.671,333.187,-307.496,351.042" Click="kitchen_l_Click" Foreground="Black" Opacity="0.6" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="666.825">
             <Button.RenderTransform>
                 <TransformGroup>
@@ -33,6 +33,7 @@
         <Image x:Name="image" HorizontalAlignment="Right" Height="161.5" Margin="0,0,169,28" VerticalAlignment="Bottom" Width="82" Source="phone_icon.png" PreviewMouseLeftButtonDown="image_PreviewMouseLeftButtonDown"/>
         <Button x:Name="control_panel" Content="control" Margin="600.5,0,604.5,157.04" VerticalAlignment="Bottom" Click="control_panel_Click"/>
         <Image x:Name="tv_open" Margin="515,312,555.5,285.5" Source="hero-roku-homescreen.png" Visibility="Hidden"/>
-        <TextBlock x:Name="c_temp_text" HorizontalAlignment="Right" Margin="0,36,169,0" TextWrapping="Wrap" Text="18.0°C" VerticalAlignment="Top" Height="98.46" Width="191.79" FontSize="72"/>
+        <TextBlock x:Name="c_temp_text" HorizontalAlignment="Right" Margin="0,36,169,0" TextWrapping="Wrap" Text="18.0°C" VerticalAlignment="Top" Height="98.46" Width="191.79" FontSize="72" Visibility="Hidden"/>
+        <TextBlock x:Name="sound_text" Margin="294,0,0,68.04" TextWrapping="Wrap" Text="Now playing: Solee - Pink Panther" VerticalAlignment="Bottom" Height="54.96" FontSize="20" Foreground="White" HorizontalAlignment="Left" Width="229.5" Visibility="Hidden"/>
     </Grid>
 </Window>

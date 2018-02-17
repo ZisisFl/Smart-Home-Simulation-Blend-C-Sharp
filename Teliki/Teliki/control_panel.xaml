@@ -5,26 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teliki"
         mc:Ignorable="d"
-        WindowStartupLocation="CenterScreen" 
-        Title="control_panel" Height="495" Width="477.5"  Margin="0,0,0,10">
+        ResizeMode="NoResize"
+        Title="control_panel" Height="430" Width="700"  Margin="0,0,0,10">
     <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
         <Image x:Name="image" Margin="0,-10,439.5,238" Source="control.jpg" HorizontalAlignment="Right" Width="840.5"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="50,58.5,0,0" TextWrapping="Wrap" Text="Φώτα Σαλονιού" VerticalAlignment="Top" Height="36.96" Width="149.79" FontSize="20"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="50,100.5,0,0" TextWrapping="Wrap" Text="Φώτα Κουζίνας" VerticalAlignment="Top" Height="36.96" Width="149.79" FontSize="20"/>
         <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="50,142.5,0,0" TextWrapping="Wrap" Text="Φώτα Υπνοδωματίου" VerticalAlignment="Top" Height="36.96" Width="199.29" FontSize="20"/>
-        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="50,184.5,0,0" TextWrapping="Wrap" Text="Καλοριφέρ" VerticalAlignment="Top" Height="36.96" Width="149.79" FontSize="20"/>
-        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="50,226.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36.96" Width="179.79" FontSize="20"><Run Text="Air"/><Run Text=" "/><Run Text="condition "/><Run Text="Υπν."/></TextBlock>
-        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="50,268.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36.96" Width="179.79" FontSize="20"><Run Text="Air"/><Run Text=" "/><Run Text="condition "/><Run Text="Σαλ"/><Run Text="."/></TextBlock>
-        <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="50,310.5,0,0" TextWrapping="Wrap" Width="179.79" FontSize="20" Text="Ηχοσύστημα" Height="36.96" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy8" HorizontalAlignment="Left" Margin="50,352.46,0,0" TextWrapping="Wrap" Width="179.79" FontSize="20" Text="Τηλεόραση" Height="36.96" VerticalAlignment="Top"/>
-        <CheckBox x:Name="lights_l" Content="" HorizontalAlignment="Left" Margin="285.5,68.133,0,0" VerticalAlignment="Top" Checked="lights_l_Checked"/>
-        <CheckBox x:Name="lights_k" Content="" HorizontalAlignment="Left" Margin="285.5,110.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="lights_b" Content="" HorizontalAlignment="Left" Margin="285.5,152.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="kalorifer" Content="" HorizontalAlignment="Left" Margin="285.5,194.133,0,0" VerticalAlignment="Top" Checked="kalorifer_Checked"/>
-        <CheckBox x:Name="aircondition_b" Content="" HorizontalAlignment="Left" Margin="285.5,236.133,0,0" VerticalAlignment="Top" Checked="aircondition_b_Checked"/>
-        <CheckBox x:Name="aircondition_l" Content="" HorizontalAlignment="Left" Margin="285.5,278.133,0,0" VerticalAlignment="Top" Checked="aircondition_l_Checked"/>
-        <CheckBox x:Name="sound_system" Content="" HorizontalAlignment="Left" Margin="285.5,320.133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="tv" Content="" HorizontalAlignment="Left" Margin="285.5,361.133,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.375,-3.42" Checked="tv_Checked"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="50,184.5,0,0" TextWrapping="Wrap" Text="Καλοριφέρ Σαλ." VerticalAlignment="Top" Height="36.96" Width="149.79" FontSize="20"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="50,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36.96" Width="179.79" FontSize="20"><Run Text="Air"/><Run Text=" "/><Run Text="condition "/><Run Text="Υπν."/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="395,58.5,0,0" TextWrapping="Wrap" Width="179.79" FontSize="20" Height="36.96" VerticalAlignment="Top"><Run Text="Air"/><Run Text=" "/><Run Text="condition "/><Run Text="Σαλ"/><Run Text="."/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="395,100.5,0,0" TextWrapping="Wrap" Width="179.79" FontSize="20" Text="Ηχοσύστημα" Height="36.96" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy8" HorizontalAlignment="Left" Margin="395,142.46,0,0" TextWrapping="Wrap" Width="179.79" FontSize="20" Text="Τηλεόραση" Height="36.96" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"/>
+        <CheckBox x:Name="lights_l" Content="" HorizontalAlignment="Left" Margin="285.5,68.133,0,0" VerticalAlignment="Top" Checked="lights_l_Checked" Unchecked="lights_l_Unchecked"/>
+        <CheckBox x:Name="lights_k" Content="" HorizontalAlignment="Left" Margin="285.5,110.133,0,0" VerticalAlignment="Top" Checked="lights_k_Checked" Unchecked="lights_k_Unchecked"/>
+        <CheckBox x:Name="lights_b" Content="" HorizontalAlignment="Left" Margin="285.5,152.133,0,0" VerticalAlignment="Top" Checked="lights_b_Checked" Unchecked="lights_b_Unchecked"/>
+        <CheckBox x:Name="kalorifer_l" Content="" HorizontalAlignment="Left" Margin="285.5,194.133,0,0" VerticalAlignment="Top" Checked="kalorifer_l_Checked" Unchecked="kalorifer_l_Unchecked"/>
+        <CheckBox x:Name="aircondition_b" Content="" HorizontalAlignment="Left" Margin="285.5,320.633,0,0" VerticalAlignment="Top" Checked="aircondition_b_Checked" Unchecked="aircondition_b_Unchecked"/>
+        <CheckBox x:Name="aircondition_l" Content="" Margin="630.5,68.133,629.525,0" VerticalAlignment="Top" Checked="aircondition_l_Checked" d:LayoutOverrides="Width" Unchecked="aircondition_l_Unchecked_1"/>
+        <CheckBox x:Name="sound_system" Content="" Margin="630.5,110.133,629.525,0" VerticalAlignment="Top" Checked="sound_system_Checked" d:LayoutOverrides="Width" Unchecked="sound_system_Unchecked"/>
+        <CheckBox x:Name="tv" Content="" Margin="630.5,151.133,629.525,0" VerticalAlignment="Top" RenderTransformOrigin="0.375,-3.42" Checked="tv_Checked" d:LayoutOverrides="VerticalAlignment, Width" Unchecked="tv_Unchecked"/>
+        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="50,226.5,0,0" TextWrapping="Wrap" Text="Καλοριφέρ Υπν" VerticalAlignment="Top" Height="36.96" Width="149.79" FontSize="20"/>
+        <CheckBox x:Name="kalorifer_b" Content="" HorizontalAlignment="Left" Margin="285.5,236.133,0,0" VerticalAlignment="Top" Checked="kalorifer_b_Checked" Unchecked="kalorifer_b_Unchecked"/>
+        <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="50,268.902,0,0" TextWrapping="Wrap" Text="Καλοριφέρ Κουζ" VerticalAlignment="Top" Height="36.96" Width="149.79" FontSize="20"/>
+        <CheckBox x:Name="kalorifer_k" Content="" HorizontalAlignment="Left" Margin="285.5,278.534,0,0" VerticalAlignment="Top" Checked="kalorifer_k_Checked" Unchecked="kalorifer_k_Unchecked"/>
 
     </Grid>
 </Window>
