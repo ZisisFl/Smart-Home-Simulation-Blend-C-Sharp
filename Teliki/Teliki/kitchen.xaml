@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Teliki"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen" 
-        Title="kitchen" Height="720" Width="1280" Margin="0,0,0,10">
+        Title="kitchen" Height="755" Width="1290" Margin="0,0,0,10">
     <Grid>
         <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
             <Image x:Name="kitchen1" Margin="0" Source="kitchen_dark.jpg"/>

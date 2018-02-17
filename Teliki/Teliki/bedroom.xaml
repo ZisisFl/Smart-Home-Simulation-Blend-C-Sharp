@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Teliki"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen" 
-        Title="bedroom" Height="720" Width="1280">
+        Title="bedroom" Height="755" Width="1290">
     <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
         <Image x:Name="bedroom2" Margin="0" Source="bedroom_dark.png"/>
         <Image x:Name="lights" Margin="0" Source="bedroom.png" Visibility="Hidden"/>
