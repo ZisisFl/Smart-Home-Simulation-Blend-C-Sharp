@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teliki"
         mc:Ignorable="d"
-        WindowStartupLocation="CenterScreen" 
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
         Title="kitchen" Height="755" Width="1290" Margin="0,0,0,10">
     <Grid>
         <Grid Margin="0,0,-8,-7" Height="720" VerticalAlignment="Top" Width="1280" HorizontalAlignment="Left">
@@ -34,6 +35,7 @@
             <Image x:Name="image" HorizontalAlignment="Right" Height="161.5" Margin="0,0,169,28" VerticalAlignment="Bottom" Width="82" Source="phone_icon.png" PreviewMouseLeftButtonDown="image_PreviewMouseLeftButtonDown"/>
             <Button x:Name="smart_fridge" Content="" HorizontalAlignment="Right" Margin="0,250.833,319.833,0" VerticalAlignment="Top" Width="44.167" Height="54.127" Opacity="0.4" Click="smart_fridge_Click" Background="#FF0B42B9"/>
             <TextBlock x:Name="c_temp_text" HorizontalAlignment="Right" Margin="0,36,116.5,0" TextWrapping="Wrap" Text="18.0°C" VerticalAlignment="Top" Height="98.46" Width="191.79" FontSize="72" Visibility="Hidden"/>
+            <Image x:Name="help" HorizontalAlignment="Right" Height="70" Margin="0,36,104.833,0" VerticalAlignment="Top" Width="70" Source="help.png" MouseLeftButtonDown="help_MouseLeftButtonDown"/>
         </Grid>
     </Grid>
 </Window>
