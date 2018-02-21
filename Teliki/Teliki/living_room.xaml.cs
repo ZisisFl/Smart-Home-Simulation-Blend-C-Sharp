@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,6 +58,9 @@ namespace Teliki
                 "έξυπνων συσκευών εντός του σπιτιού όπως να ανάψει τα φώτα, τον κλιματισμό και άλλα. Για να ανοίξει το control panel ο χρήστης"+
                 "πρέπει να πατήσει πάνω στο πληκτρολόγιο κάτω από την τηλεόραση που βρίσκεται στο κέντρο του δωματίου. Ακόμη ο χρήστης μπορεί να"+
                 "χρησιμοποιήσει το έξυπνο κινητό πατώντας πάνω στο εικονίδιο που υπάρχει στο κάτω δεξιά μέρος του δωματίου.");
+
+            //string help_file = @"\C:\Teliki\bin\Resources\help.chm";
+            //Process.Start(help_file);
         }
     }
 }
