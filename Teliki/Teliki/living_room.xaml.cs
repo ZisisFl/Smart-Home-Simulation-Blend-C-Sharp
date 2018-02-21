@@ -54,13 +54,7 @@ namespace Teliki
 
         private void help_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("Στο σαλόνι ο χρήστης μπορεί να ενεργοποιήσει το control panel για να προσωμιώσει την απομακρυσμένη διαχείρηση" +
-                "έξυπνων συσκευών εντός του σπιτιού όπως να ανάψει τα φώτα, τον κλιματισμό και άλλα. Για να ανοίξει το control panel ο χρήστης"+
-                "πρέπει να πατήσει πάνω στο πληκτρολόγιο κάτω από την τηλεόραση που βρίσκεται στο κέντρο του δωματίου. Ακόμη ο χρήστης μπορεί να"+
-                "χρησιμοποιήσει το έξυπνο κινητό πατώντας πάνω στο εικονίδιο που υπάρχει στο κάτω δεξιά μέρος του δωματίου.");
-
-            //string help_file = @"\C:\Teliki\bin\Resources\help.chm";
-            //Process.Start(help_file);
+            Process.Start("Help.chm");
         }
     }
 }

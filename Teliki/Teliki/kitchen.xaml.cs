@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,9 +53,7 @@ namespace Teliki
 
         private void help_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("Στην κουζίνα ο χρήστης μπορεί να αποκτήσει πρόσβαση στο έξυπνο ψυγείο, να ανοίξει το πάνελ" +
-                "του και να το διαχειριστεί πατώντας στο μπλε πλαίσιο που περιβάλλει την οθόνη του. Ακόμη ο χρήστης μπορεί να" +
-                "χρησιμοποιήσει το έξυπνο κινητό πατώντας πάνω στο εικονίδιο που υπάρχει στο κάτω δεξιά μέρος του δωματίου.");
+            Process.Start("Help.chm");
         }
     }
 }

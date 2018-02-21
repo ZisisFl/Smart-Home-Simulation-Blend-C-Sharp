@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,9 +53,7 @@ namespace Teliki
 
         private void help_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("Στο υπνοδωμάτιο ο χρήστης μπορεί να ενεργοποιήσει την Έξυπνη Ντουλάπα για να δει το εσωτερικό της αλλά"+
-                "και να πάρει προτάσεις ένδυμασίας από ρούχα που περιέχονται σε αυτή πατώντας πάνω στο κοκκινοπώ πλαίσιο που την καλύπτει."+
-                "Ακόμη ο χρήστης μπορεί να χρησιμοποιήσει το έξυπνο κινητό πατώντας πάνω στο εικονίδιο που υπάρχει στο κάτω δεξιά μέρος του δωματίου.");
+            Process.Start("Help.chm");
         }
     }
 }
